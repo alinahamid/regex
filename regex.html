@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Regular expression</title>
+        <script>
+        
+        function validate()
+        {
+            var username = document.getElementById("uname").value;
+            var regx = /E00/;
+            if(regx.test(Username))
+            { 
+             alert("Valid Username");
+            }
+            else
+            {
+                alert("Invalid Username");
+                document.getElementById("lbluser") .style.visibility="visible" ;
+            }
+        }
+
+    </script>
+    </head>
+    <body>
+        <form >
+            <input id="uname" type="text" placeholder="Username"/><br>
+            <label id="lbluser" style="color :brown; visibility:hidden "><br>Invalid Username</label><br>
+            <button type="button" onclick="validate()">Submit</button>
+        </form>
+    </body>
+</html>
